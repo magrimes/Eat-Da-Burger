@@ -1,0 +1,39 @@
+li {
+    padding: 5px;
+    margin: 5px;    
+}
+  
+.label {
+    font-weight: bold;
+}
+  
+.create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: #00ffc8;
+}
+  
+.form-group {
+    margin-bottom: 5px;    
+}
+  
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+  background-image: url("../img/background.png");
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: red;
+}
+
+#burgerimage {
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+}
