@@ -1,9 +1,8 @@
-<div class="container">
+<div class="container-fluid">
   <div class="row">
     <div class="col-sm">
       <header class="d-flex align-items-center flex-column">
-
-        <img id="burgerimage" src="/assets/img/burger.png">
+        <img id="burgerimage" src="/assets/img/burgerapp.jpg">
         <h1>Eat-Da-Burger!</h1>
       </header>
     </div>
@@ -31,7 +30,7 @@
   <div class="row ">
     <div class="col-sm">
       <div class="d-flex align-items-center flex-column">
-        <h2>Add a Burger!</h2>
+        <h3>Fill in the burger you want to eat and click 'Add Burger'. Once you have devoured it, click 'Devour' to archive it to the 'Devoured Burgers' list. Enjoy eating!</h3>
         <form class="create-form">
 
           <div class="form-group">
@@ -42,6 +41,40 @@
           <button id="test" type="submit">Add Burger</button>
         </form>
       </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Where burgers are added and archived on the page. --}}
+<div class="row">
+    <div class="col-sm-3">
+    </div>
+    <div class="col-sm-3 text-center">
+      <h2>Burgers to devour!</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/unless}}
+        {{/each}}
+      </ul>
+
+    </div>
+
+    <div class="col-sm-3 text-center">
+      <h2>Devoured burgers!</h2>
+
+      <ul>
+        {{#each burgers}}
+        {{#if devoured}}
+
+        <li> {{burger_name}}</li>
+        {{/if}}
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col-sm-3">
     </div>
   </div>
 </div>
