@@ -29,11 +29,38 @@ body {
 }
 
 h1 {
-  color: red;
+  color: rgb(158, 62, 62);
+  font-family: fantasy;
+}
+
+h2 {
+  margin-top: 25px;
+}
+
+h3 {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 40px;
+  text-align: center;
 }
 
 #burgerimage {
   padding: 20px;
-  width: 250px;
-  height: 250px;
+  width: 400px;
+  height: 400px;
+}
+
+#test {
+  text-align: center;
+  margin-left: 10px;
+  margin-bottom: 25px;
+}
+
+input {
+  padding: 5px;
+  border-color: rgb(158, 62, 62);
+}
+
+label {
+  font-size: xx-large;
 }
