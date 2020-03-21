@@ -1,9 +1,11 @@
 INSERT INTO burgers (
-    burger_name
+    burger_name, devoured
 ) VALUES (
-    "Cheeseburger"
-), (
-    "Big Mac"
-), (
-    "Whopper"
+    "Bacon Cheeseburger", true
+),(
+    "Pimento Cheese Burger", false
+),(
+    "Bohemian Radishy", false
+),(
+    "Sweet Home Avocado", true
 )
